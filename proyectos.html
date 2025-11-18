@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IIISI – Proyectos</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg bg-white shadow-sm py-3">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center fw-bold text-primary" href="index.html">
+      <img src="assets/logo.png" height="55" class="me-3" alt="IIISI">
+      IIISI – UNSE
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto fw-semibold">
+
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="investigacion.html" data-bs-toggle="dropdown">
+            Investigación
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="investigacion.html#lineas">Líneas de investigación</a></li>
+            <li><a class="dropdown-item" href="grupos.html">Grupos y Laboratorios</a></li>
+            <li><a class="dropdown-item" href="proyectos.html">Proyectos</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="integrantes.html">Integrantes</a></li>
+        <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
+        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+
+        <li class="nav-item">
+          <button id="themeToggleBtn" class="btn btn-outline-secondary btn-sm">🌙 Oscuro</button>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HEADER -->
+<header class="header d-flex align-items-center">
+  <div class="container text-center text-white">
+    <h1 class="fw-bold display-5">Proyectos de Investigación</h1>
+    <p class="lead mt-3">Iniciativas científicas, tecnológicas y de innovación del IIISI</p>
+  </div>
+</header>
+
+<!-- CONTENIDO -->
+<div class="container my-5">
+
+  <h2 class="section-title mb-4">Proyectos vigentes</h2>
+
+  <div class="row g-4">
+
+    <!-- PROYECTO 1 -->
+    <div class="col-md-6">
+      <div class="card shadow-sm project-card h-100">
+        <img src="assets/proyecto1.jpg" class="card-img-top project-img" alt="Proyecto IA">
+        <div class="card-body">
+          <h4 class="card-title text-primary fw-bold">IA Explicable para la Administración Pública</h4>
+          <p class="text-muted mb-1"><strong>Año:</strong> 2025–2027</p>
+          <p class="text-muted mb-3"><strong>Responsables:</strong> Dr. Juan Pérez, Mg. Ana Gómez</p>
+          <p class="card-text">
+            Desarrollo de modelos de inteligencia artificial explicable aplicados a procesos
+            administrativos del sector público, garantizando transparencia, trazabilidad
+            y responsabilidad algorítmica en decisiones automatizadas.
+          </p>
+          <a href="#" class="btn btn-outline-primary mt-2">Ver más</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROYECTO 2 -->
+    <div class="col-md-6">
+      <div class="card shadow-sm project-card h-100">
+        <img src="assets/proyecto2.jpg" class="card-img-top project-img" alt="Ciencia de Datos">
+        <div class="card-body">
+          <h4 class="card-title text-primary fw-bold">Analítica de Datos para Servicios Públicos</h4>
+          <p class="text-muted mb-1"><strong>Año:</strong> 2024–2026</p>
+          <p class="text-muted mb-3"><strong>Responsables:</strong> Lic. Carlos Ruiz</p>
+          <p class="card-text">
+            Implementación de modelos estadísticos y de machine learning para analizar patrones de uso,
+            optimización de recursos y predicción de demanda en servicios públicos esenciales.
+          </p>
+          <a href="#" class="btn btn-outline-primary mt-2">Ver más</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROYECTO 3 -->
+    <div class="col-md-6">
+      <div class="card shadow-sm project-card h-100">
+        <img src="assets/proyecto3.jpg" class="card-img-top project-img" alt="Ingeniería de Software">
+        <div class="card-body">
+          <h4 class="card-title text-primary fw-bold">Calidad de Software en Sistemas Críticos</h4>
+          <p class="text-muted mb-1"><strong>Año:</strong> 2023–2025</p>
+          <p class="text-muted mb-3"><strong>Responsables:</strong> Ing. Marcos Díaz</p>
+          <p class="card-text">
+            Evaluación y mejora de calidad en sistemas críticos mediante pruebas automatizadas,
+            métricas avanzadas y verificación formal de componentes de software.
+          </p>
+          <a href="#" class="btn btn-outline-primary mt-2">Documentación</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROYECTO 4 -->
+    <div class="col-md-6">
+      <div class="card shadow-sm project-card h-100">
+        <img src="assets/proyecto4.jpg" class="card-img-top project-img" alt="Transformación Digital">
+        <div class="card-body">
+          <h4 class="card-title text-primary fw-bold">Transformación Digital en Educación Superior</h4>
+          <p class="text-muted mb-1"><strong>Año:</strong> 2024–2028</p>
+          <p class="text-muted mb-3"><strong>Responsables:</strong> Equipo interdisciplinario IIISI</p>
+          <p class="card-text">
+            Proyecto orientado a modernizar procesos académicos, administrativos
+            y de investigación mediante plataformas digitales integradas.
+          </p>
+          <a href="#" class="btn btn-outline-primary mt-2">Ver proyecto</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer text-center text-white py-4">
+  © IIISI – Universidad Nacional de Santiago del Estero
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
