@@ -1,3 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IIISI – Laboratorio de Ingeniería de Software</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg bg-white shadow-sm py-3">
   <div class="container">
     <a class="navbar-brand d-flex align-items-center fw-bold text-primary" href="index.html">
@@ -11,12 +26,11 @@
 
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto fw-semibold">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Inicio</a>
-        </li>
+
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
 
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="investigacion.html" id="invDropdown"
+          <a class="nav-link dropdown-toggle active" href="investigacion.html" id="invDropdown"
              role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Investigación
           </a>
@@ -26,27 +40,60 @@
           </ul>
         </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="integrantes.html">Integrantes</a>
-        </li>
+        <li class="nav-item"><a class="nav-link" href="integrantes.html">Integrantes</a></li>
+        <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
+        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
 
         <li class="nav-item">
-          <a class="nav-link" href="noticias.html">Noticias</a>
+          <button id="themeToggleBtn" class="btn btn-outline-secondary btn-sm">🌙 Oscuro</button>
         </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="contacto.html">Contacto</a>
-        </li>
-
-        <li class="nav-item">
-          <button id="themeToggleBtn" class="btn btn-outline-secondary btn-sm">
-            🌙 Oscuro
-          </button>
-        </li>
       </ul>
     </div>
   </div>
 </nav>
 
+
+<!-- HEADER -->
+<header class="header d-flex align-items-center">
+  <div class="container text-center text-white">
+    <h1 class="fw-bold display-5">Laboratorio de Ingeniería de Software</h1>
+    <p class="lead mt-3">Calidad, arquitectura, pruebas y procesos de desarrollo</p>
+  </div>
+</header>
+
+
+<!-- CONTENIDO -->
+<div class="container my-5">
+
+  <section class="mb-5">
+    <h2 class="section-title">Presentación</h2>
+    <p class="section-text">
+      El Laboratorio de Ingeniería de Software investiga la calidad de software, procesos de desarrollo,
+      arquitectura, metodologías ágiles y automatización de pruebas.
+    </p>
+  </section>
+
+  <section class="mb-5">
+    <h2 class="section-title">Líneas de trabajo</h2>
+    <ul class="section-text">
+      <li>Pruebas automatizadas y continuous testing.</li>
+      <li>Arquitecturas orientadas a servicios.</li>
+      <li>DevOps y automatización de pipelines.</li>
+      <li>Métodos ágiles y calidad de procesos.</li>
+    </ul>
+  </section>
+
+</div>
+
+
+<!-- FOOTER -->
+<footer class="footer text-center text-white py-4">
+  © IIISI – Universidad Nacional de Santiago del Estero
+</footer>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="script.js"></script>
+
+</body>
+</html>
