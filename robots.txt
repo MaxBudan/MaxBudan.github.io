@@ -1,1 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://maxbudan.github.io/sitemap.xml
 
