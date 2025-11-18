@@ -1,7 +1,11 @@
+/* ---------------------------------------------------
+   ESTILOS GENERALES
+--------------------------------------------------- */
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #f7f9fc;
   color: #333;
+  transition: background-color .3s, color .3s;
 }
 
 /* HEADER */
@@ -12,6 +16,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.35);
 }
 
 /* TITULOS */
@@ -30,7 +35,10 @@ body {
   color: #333;
 }
 
-/* NAVBAR */
+/* ---------------------------------------------------
+   NAVBAR
+--------------------------------------------------- */
+
 .navbar {
   border-bottom: 1px solid #e0e0e0;
 }
@@ -41,9 +49,16 @@ body {
   transition: 0.2s;
 }
 
+/* 🔥 CORRECCIÓN CRÍTICA (NO usar .active para el color) */
 .nav-link:hover,
-.nav-link.active {
+.nav-link:focus {
   color: #00264d !important;
+}
+
+/* Estilo elegante para la página activa, sin interferir */
+.nav-link.active {
+  font-weight: 700;
+  opacity: 0.85;
 }
 
 /* BOTÓN MODO OSCURO */
@@ -51,21 +66,28 @@ body {
   margin-left: 1rem;
 }
 
-/* GRUPOS */
+/* ---------------------------------------------------
+   CARDS, CAJAS Y GRUPOS
+--------------------------------------------------- */
+
 .group-box {
   border-left: 6px solid #003366;
   border-radius: 5px;
   background-color: #ffffff;
 }
 
-/* FOOTER */
-.footer {
-  background-color: #002b55;
-}
-
-/* CARDS */
 .card-title {
   font-weight: 600;
+}
+
+.card {
+  border: none !important;
+  transition: transform .2s ease, box-shadow .3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 8px 18px rgba(0,0,0,.15);
 }
 
 /* AVATAR INTEGRANTES */
@@ -75,32 +97,42 @@ body {
   object-fit: cover;
 }
 
-/* ---------- MODO OSCURO ---------- */
+/* FOOTER */
+.footer {
+  background-color: #002b55;
+}
+
+/* ---------------------------------------------------
+   MODO OSCURO
+--------------------------------------------------- */
 
 body.dark-mode {
   background-color: #101622;
   color: #e4e7ef;
 }
 
+/* NAVBAR DARK */
 body.dark-mode .navbar {
   background-color: #121826 !important;
   border-bottom-color: #222a3a;
 }
 
-body.dark-mode .navbar .nav-link {
+body.dark-mode .nav-link {
   color: #d0d4e0 !important;
 }
 
-body.dark-mode .navbar .nav-link:hover,
-body.dark-mode .navbar .nav-link.active {
+body.dark-mode .nav-link:hover,
+body.dark-mode .nav-link:focus {
   color: #ffffff !important;
 }
 
+/* HEADER DARK */
 body.dark-mode .header {
   background: linear-gradient(#050917e6, #050917e6),
               url("assets/header-bg.jpg") center/cover no-repeat;
 }
 
+/* TITULOS DARK */
 body.dark-mode .section-title {
   color: #d1e2ff;
   border-bottom-color: #4e7ad9;
@@ -112,6 +144,7 @@ body.dark-mode li {
   color: #d0d4e0;
 }
 
+/* CARDS / GROUPS DARK */
 body.dark-mode .card,
 body.dark-mode .group-box {
   background-color: #181f30;
@@ -123,7 +156,9 @@ body.dark-mode .text-primary {
   color: #87b1ff !important;
 }
 
+/* FOOTER DARK */
 body.dark-mode .footer {
   background-color: #050917;
 }
+
 
