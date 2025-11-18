@@ -12,7 +12,7 @@ body {
   align-items: center;
 }
 
-/* SECCIONES */
+/* TITULOS */
 .section-title {
   font-size: 1.9rem;
   font-weight: 600;
@@ -39,7 +39,19 @@ body {
   color: #00264d !important;
 }
 
+/* GRUPOS */
+.group-box {
+  border-left: 6px solid #003366;
+  border-radius: 5px;
+}
+
 /* FOOTER */
 .footer {
   background-color: #002b55;
 }
+
+/* CARDS */
+.card-title {
+  font-weight: 600;
+}
+
