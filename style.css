@@ -1,1 +1,18 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.header {
+  height: 50vh;
+  background: linear-gradient(#003366cc, #003366cc), url("assets/header-bg.jpg") center/cover no-repeat;
+  background-color: #003366;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  border-left: 6px solid #003366;
+  padding-left: 12px;
+}
 
