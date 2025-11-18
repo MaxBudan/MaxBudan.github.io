@@ -3,45 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IIISI – Instituto de Investigación en Informática y Sistemas de Información</title>
-
-  <!-- Bootstrap -->
+  <title>IIISI – Inicio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<!-- NAVBAR INSTITUCIONAL -->
+<!-- NAVBAR -->
+<!-- (pegar aquí el navbar común) -->
 <nav class="navbar navbar-expand-lg bg-white shadow-sm py-3">
   <div class="container">
-    <a class="navbar-brand d-flex align-items-center fw-bold text-primary" href="#">
+    <a class="navbar-brand d-flex align-items-center fw-bold text-primary" href="index.html">
       <img src="assets/logo.png" height="55" class="me-3" alt="IIISI">
       IIISI – UNSE
     </a>
-
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
-
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto fw-semibold">
-        <li class="nav-item"><a class="nav-link" href="#instituto">Instituto</a></li>
-        <li class="nav-item"><a class="nav-link" href="#lineas">Líneas de Investigación</a></li>
-        <li class="nav-item"><a class="nav-link" href="#grupos">Grupos / Laboratorios</a></li>
-        <li class="nav-item"><a class="nav-link" href="#integrantes">Integrantes</a></li>
-        <li class="nav-item"><a class="nav-link" href="#noticias">Noticias</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="investigacion.html" id="invDropdown"
+             role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Investigación
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="invDropdown">
+            <li><a class="dropdown-item" href="investigacion.html#lineas">Líneas de investigación</a></li>
+            <li><a class="dropdown-item" href="grupos.html">Grupos y Laboratorios</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="integrantes.html">Integrantes</a></li>
+        <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
+        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        <li class="nav-item">
+          <button id="themeToggleBtn" class="btn btn-outline-secondary btn-sm">🌙 Oscuro</button>
+        </li>
       </ul>
     </div>
   </div>
 </nav>
 
-<!-- HEADER TIPO CONICET -->
 <header class="header d-flex align-items-center">
   <div class="container text-center text-white">
     <h1 class="fw-bold display-5">Instituto de Investigación en Informática y Sistemas de Información</h1>
@@ -49,218 +52,59 @@
   </div>
 </header>
 
-<!-- CONTENEDOR PRINCIPAL -->
 <div class="container my-5">
-
-  <!-- SECCIÓN: Instituto -->
-  <section id="instituto" class="mb-5">
+  <section class="mb-5">
     <h2 class="section-title">El Instituto</h2>
     <p class="section-text">
-      El Instituto IIISI promueve, socializa y difunde la capacidad científica y tecnológica del 
-      Departamento Académico de Informática, contribuyendo al desarrollo regional, nacional e internacional.
+      El IIISI articula investigación, docencia y transferencia en informática y sistemas de información,
+      contribuyendo al desarrollo científico y tecnológico de la región.
     </p>
   </section>
 
-  <!-- SECCIÓN: Misión -->
-  <section id="mision" class="mb-5">
-    <h2 class="section-title">Misión</h2>
-    <p class="section-text">
-      Impulsar la investigación, la innovación y el desarrollo tecnológico en informática y sistemas de información.
-    </p>
-  </section>
-
-  <!-- SECCIÓN: Visión -->
-  <section id="vision" class="mb-5">
-    <h2 class="section-title">Visión</h2>
-    <p class="section-text">
-      Ser un referente nacional e internacional en I+D+I en informática y tecnologías emergentes.
-    </p>
-  </section>
-
-  <!-- SECCIÓN: Objetivos -->
-  <section id="objetivos" class="mb-5">
-    <h2 class="section-title">Objetivos</h2>
-    <ul class="section-text">
-      <li>Fomentar la generación de conocimiento original.</li>
-      <li>Formar y actualizar recursos humanos especializados.</li>
-      <li>Vincular la ciencia con sectores sociales y productivos.</li>
-      <li>Desarrollar proyectos con impacto regional y nacional.</li>
-    </ul>
-  </section>
-
-  <!-- SECCIÓN: LÍNEAS DE INVESTIGACIÓN -->
-  <section id="lineas" class="mb-5">
-    <h2 class="section-title">Líneas de Investigación</h2>
-
+  <section class="mb-5">
+    <h2 class="section-title">Accesos rápidos</h2>
     <div class="row g-4">
-      <div class="col-md-4">
-        <div class="card shadow-sm border-0 h-100">
-          <div class="card-body">
-            <h5 class="card-title text-primary">Inteligencia Artificial</h5>
-            <p class="card-text">Aprendizaje automático, IA explicable, agentes inteligentes, minería de datos.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card shadow-sm border-0 h-100">
-          <div class="card-body">
-            <h5 class="card-title text-primary">Ingeniería de Software</h5>
-            <p class="card-text">Arquitecturas, calidad de software, pruebas automáticas, metodologías ágiles.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card shadow-sm border-0 h-100">
-          <div class="card-body">
-            <h5 class="card-title text-primary">Ciencia de Datos</h5>
-            <p class="card-text">Modelado estadístico, Big Data, visualización y análisis de grandes volúmenes.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card shadow-sm border-0 h-100">
-          <div class="card-body">
-            <h5 class="card-title text-primary">Sistemas de Información</h5>
-            <p class="card-text">Transformación digital, gobierno electrónico, interoperabilidad.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card shadow-sm border-0 h-100">
-          <div class="card-body">
-            <h5 class="card-title text-primary">Redes y Telecomunicaciones</h5>
-            <p class="card-text">Seguridad informática, IoT, computación distribuida.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SECCIÓN: Grupos / Laboratorios -->
-  <section id="grupos" class="mb-5">
-    <h2 class="section-title">Grupos y Laboratorios</h2>
-
-    <div class="row g-4">
-
-      <div class="col-md-6">
-        <div class="group-box p-4 shadow-sm bg-white">
-          <h5 class="text-primary">Laboratorio de Sistemas Inteligentes</h5>
-          <p>Investigación en agentes, razonamiento automático, IA explicable y sistemas inteligentes aplicados.</p>
-        </div>
-      </div>
-
-      <div class="col-md-6">
-        <div class="group-box p-4 shadow-sm bg-white">
-          <h5 class="text-primary">Laboratorio de Ingeniería de Software</h5>
-          <p>Calidad, arquitectura, pruebas automatizadas, DevOps, software crítico.</p>
-        </div>
-      </div>
-
-      <div class="col-md-6">
-        <div class="group-box p-4 shadow-sm bg-white">
-          <h5 class="text-primary">Grupo de Ciencia de Datos</h5>
-          <p>Modelado, minería de datos, machine learning, datos abiertos y analítica avanzada.</p>
-        </div>
-      </div>
-
-      <div class="col-md-6">
-        <div class="group-box p-4 shadow-sm bg-white">
-          <h5 class="text-primary">Grupo de Sistemas de Información</h5>
-          <p>Interoperabilidad, gestión documental, gobierno electrónico, transformación digital.</p>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- SECCIÓN: Integrantes -->
-  <section id="integrantes" class="mb-5">
-    <h2 class="section-title">Integrantes</h2>
-
-    <p class="section-text">Ejemplo inicial — luego podemos cargar los datos reales.</p>
-
-    <div class="row g-4">
-
       <div class="col-md-4">
         <div class="card shadow-sm h-100">
-          <div class="card-body text-center">
-            <img src="assets/user.png" class="rounded-circle mb-3" height="90">
-            <h5 class="text-primary">Dr. Juan Pérez</h5>
-            <p class="text-muted">Investigador – IA y Aprendizaje Automático</p>
+          <div class="card-body">
+            <h5 class="card-title text-primary">Líneas de investigación</h5>
+            <p class="card-text">Conocé las áreas estratégicas en las que trabaja el Instituto.</p>
+            <a href="investigacion.html#lineas" class="btn btn-outline-primary btn-sm">Ver más</a>
           </div>
         </div>
       </div>
 
       <div class="col-md-4">
         <div class="card shadow-sm h-100">
-          <div class="card-body text-center">
-            <img src="assets/user.png" class="rounded-circle mb-3" height="90">
-            <h5 class="text-primary">Mg. Ana Gómez</h5>
-            <p class="text-muted">Ingeniería de Software – Calidad</p>
+          <div class="card-body">
+            <h5 class="card-title text-primary">Grupos y Laboratorios</h5>
+            <p class="card-text">Equipos de trabajo que desarrollan proyectos I+D+I.</p>
+            <a href="grupos.html" class="btn btn-outline-primary btn-sm">Ver grupos</a>
           </div>
         </div>
       </div>
 
       <div class="col-md-4">
         <div class="card shadow-sm h-100">
-          <div class="card-body text-center">
-            <img src="assets/user.png" class="rounded-circle mb-3" height="90">
-            <h5 class="text-primary">Lic. Carlos Ruiz</h5>
-            <p class="text-muted">Ciencia de Datos – Modelado</p>
+          <div class="card-body">
+            <h5 class="card-title text-primary">Noticias</h5>
+            <p class="card-text">Convocatorias, eventos, publicaciones y novedades del IIISI.</p>
+            <a href="noticias.html" class="btn btn-outline-primary btn-sm">Ir a noticias</a>
           </div>
         </div>
       </div>
-
     </div>
   </section>
-
-  <!-- SECCIÓN: Noticias -->
-  <section id="noticias" class="mb-5">
-    <h2 class="section-title">Noticias y Novedades</h2>
-
-    <div class="row g-4">
-
-      <div class="col-md-6">
-        <div class="card shadow-sm border-0">
-          <div class="card-body">
-            <h5 class="card-title text-primary">Convocatoria a Proyectos 2025</h5>
-            <p class="card-text">El instituto abre la convocatoria para proyectos de investigación interdisciplinarios.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6">
-        <div class="card shadow-sm border-0">
-          <div class="card-body">
-            <h5 class="card-title text-primary">Nuevas líneas de investigación en IA</h5>
-            <p class="card-text">El IIISI incorpora un eje de trabajo en IA explicable y sistemas cognitivos.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- CONTACTO -->
-  <section id="contacto" class="mb-5">
-    <h2 class="section-title">Contacto</h2>
-    <p class="section-text">
-      Facultad de Ciencias Exactas y Tecnologías – UNSE<br>
-      Av. Belgrano (S) 1912, Santiago del Estero, Argentina<br>
-      Email: <a href="mailto:iiisi@unse.edu.ar">iiisi@unse.edu.ar</a>
-    </p>
-  </section>
-
 </div>
 
-<!-- FOOTER -->
 <footer class="footer text-center text-white py-4">
   © IIISI – Universidad Nacional de Santiago del Estero
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
