@@ -1,18 +1,45 @@
 body {
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
+/* HEADER */
 .header {
-  height: 50vh;
-  background: linear-gradient(#003366cc, #003366cc), url("assets/header-bg.jpg") center/cover no-repeat;
-  background-color: #003366;
+  height: 40vh;
+  background: linear-gradient(#003366d0, #003366d0),
+              url("assets/header-bg.jpg") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+/* SECCIONES */
 .section-title {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  font-weight: 700;
-  border-left: 6px solid #003366;
-  padding-left: 12px;
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: #003366;
+  border-bottom: 3px solid #003366;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
 }
 
+.section-text {
+  font-size: 1.08rem;
+  line-height: 1.7rem;
+  color: #333;
+}
+
+/* NAVBAR */
+.nav-link {
+  color: #004080 !important;
+  margin-left: 18px;
+  transition: 0.2s;
+}
+
+.nav-link:hover {
+  color: #00264d !important;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #002b55;
+}
