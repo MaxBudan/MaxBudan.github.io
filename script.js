@@ -62,7 +62,7 @@ async function loadNewsFromSheet() {
 
   // ⚠️ IMPORTANTE:
   // Cuando tengas el Google Sheet creado, reemplazá estos dos valores:
-  const SHEET_ID = "PON_AQUÍ_TU_ID_DE_SHEET";
+  const SHEET_ID = "1uSTOibwiKSuA60LJDqCacZPI8gQjsV_ji5MA2IyCyb0";
   const SHEET_NAME = "Noticias"; // nombre de la pestaña
 
   const url =
