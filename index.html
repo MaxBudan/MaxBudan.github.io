@@ -3,32 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IIISI - Instituto de Investigación en Informática y Sistemas de Información</title>
+  <title>IIISI – Instituto de Investigación en Informática y Sistemas de Información</title>
 
   <!-- Bootstrap -->
-  <link 
-    rel="stylesheet" 
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-  >
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+<!-- NAVBAR INSTITUCIONAL -->
+<nav class="navbar navbar-expand-lg bg-white shadow-sm py-3">
   <div class="container">
-    <a class="navbar-brand d-flex align-items-center" href="#">
-      <img src="assets/logo.png" alt="Logo IIISI" height="50" class="me-2">
-      <span>IIISI - UNSE</span>
+    <a class="navbar-brand d-flex align-items-center fw-bold text-primary" href="#">
+      <img src="assets/logo.png" height="55" class="me-3" alt="IIISI">
+      IIISI – UNSE
     </a>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="menu">
-      <ul class="navbar-nav ms-auto">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto fw-semibold">
+        <li class="nav-item"><a class="nav-link" href="#instituto">Instituto</a></li>
         <li class="nav-item"><a class="nav-link" href="#mision">Misión</a></li>
         <li class="nav-item"><a class="nav-link" href="#vision">Visión</a></li>
         <li class="nav-item"><a class="nav-link" href="#objetivos">Objetivos</a></li>
@@ -40,87 +42,82 @@
   </div>
 </nav>
 
-<!-- HEADER -->
-<header class="header d-flex align-items-center text-center text-white">
-  <div class="container">
-    <h1 class="fw-bold">Instituto de Investigación en Informática y Sistemas de Información</h1>
-    <p class="lead mt-3">
-      Investigación – Desarrollo – Innovación (I+D+I)
-    </p>
+<!-- HEADER TIPO CONICET -->
+<header class="header d-flex align-items-center">
+  <div class="container text-center text-white">
+    <h1 class="fw-bold display-5">Instituto de Investigación en Informática y Sistemas de Información</h1>
+    <p class="lead mt-3">Investigación – Desarrollo – Innovación (I+D+I)</p>
   </div>
 </header>
 
-<!-- SECCIONES -->
+<!-- CONTENEDOR PRINCIPAL -->
+<div class="container my-5">
 
-<section id="mision" class="py-5 bg-light">
-  <div class="container">
+  <!-- SECCIÓN: Instituto -->
+  <section id="instituto" class="mb-5">
+    <h2 class="section-title">El Instituto</h2>
+    <p class="section-text">
+      El Instituto IIISI promueve, socializa y difunde la capacidad científica y tecnológica del 
+      Departamento Académico de Informática, contribuyendo al desarrollo regional y nacional.
+    </p>
+  </section>
+
+  <!-- SECCIÓN: Misión -->
+  <section id="mision" class="mb-5">
     <h2 class="section-title">Misión</h2>
-    <p class="fs-5">
-      Promover, socializar y difundir la capacidad científica y tecnológica de los recursos humanos 
-      del Departamento Académico de Informática.
+    <p class="section-text">
+      Promover la investigación, la innovación y el desarrollo tecnológico en informática y sistemas de información.
     </p>
-  </div>
-</section>
+  </section>
 
-<section id="vision" class="py-5">
-  <div class="container">
+  <!-- SECCIÓN: Visión -->
+  <section id="vision" class="mb-5">
     <h2 class="section-title">Visión</h2>
-    <p class="fs-5">
-      Ser, en la próxima década, un referente nacional e internacional en Investigación, Desarrollo e Innovación 
-      (I+D+I) en Informática y Sistemas de Información, aportando al desarrollo científico, tecnológico y profesional.
+    <p class="section-text">
+      Ser un referente nacional e internacional en I+D+I en el ámbito de la informática y los sistemas de información.
     </p>
-  </div>
-</section>
+  </section>
 
-<section id="objetivos" class="py-5 bg-light">
-  <div class="container">
+  <!-- SECCIÓN: Objetivos -->
+  <section id="objetivos" class="mb-5">
     <h2 class="section-title">Objetivos</h2>
-    <ul class="fs-5">
-      <li>Contribuir al desarrollo local, regional y nacional mediante investigación en Informática y Sistemas de Información.</li>
-      <li>Promover la formación, actualización y especialización de recursos humanos.</li>
-      <li>Impulsar proyectos de investigación con impacto social y tecnológico.</li>
+    <ul class="section-text">
+      <li>Contribuir al desarrollo científico y tecnológico local, regional y nacional.</li>
+      <li>Formar, actualizar y especializar recursos humanos en áreas estratégicas.</li>
+      <li>Impulsar proyectos de investigación con impacto social.</li>
     </ul>
-  </div>
-</section>
+  </section>
 
-<section id="proyectos" class="py-5">
-  <div class="container">
+  <!-- SECCIÓN: Proyectos -->
+  <section id="proyectos" class="mb-5">
     <h2 class="section-title">Proyectos de Investigación</h2>
-    <p class="fs-5">
-      Próximamente se publicarán los proyectos activos y finalizados del Instituto IIISI.
-    </p>
-  </div>
-</section>
+    <p class="section-text">Listado de proyectos en elaboración.</p>
+  </section>
 
-<section id="integrantes" class="py-5 bg-light">
-  <div class="container">
+  <!-- SECCIÓN: Integrantes -->
+  <section id="integrantes" class="mb-5">
     <h2 class="section-title">Integrantes</h2>
-    <p class="fs-5">
-      Listado preliminar del cuerpo de investigadores, docentes y estudiantes vinculados al Instituto.
-      (Pendiente de cargar.)
-    </p>
-  </div>
-</section>
+    <p class="section-text">Listado de investigadores y colaboradores próximamente disponible.</p>
+  </section>
 
-<section id="contacto" class="py-5">
-  <div class="container">
+  <!-- SECCIÓN: Contacto -->
+  <section id="contacto" class="mb-5">
     <h2 class="section-title">Contacto</h2>
-    <p class="fs-5">
-      Facultad de Ciencias Exactas y Tecnologías — UNSE<br>
-      Av. Belgrano (S) 1912 – Santiago del Estero<br>
+    <p class="section-text">
+      Facultad de Ciencias Exactas y Tecnologías – UNSE<br>
+      Av. Belgrano (S) 1912, Santiago del Estero, Argentina<br>
       Email: <a href="mailto:iiisi@unse.edu.ar">iiisi@unse.edu.ar</a>
     </p>
-  </div>
-</section>
+  </section>
+
+</div>
 
 <!-- FOOTER -->
-<footer class="bg-dark text-center text-white py-3">
-  <p class="m-0">© IIISI - Universidad Nacional de Santiago del Estero</p>
+<footer class="footer text-center text-white py-3">
+  © IIISI – Universidad Nacional de Santiago del Estero
 </footer>
 
-<!-- Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>
 
