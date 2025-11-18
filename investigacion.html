@@ -1,3 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IIISI – Investigación</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg bg-white shadow-sm py-3">
   <div class="container">
     <a class="navbar-brand d-flex align-items-center fw-bold text-primary" href="index.html">
@@ -11,17 +26,18 @@
 
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto fw-semibold">
+
         <li class="nav-item">
           <a class="nav-link" href="index.html">Inicio</a>
         </li>
 
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="investigacion.html" id="invDropdown"
+          <a class="nav-link dropdown-toggle active" href="investigacion.html" id="invDropdown"
              role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Investigación
           </a>
           <ul class="dropdown-menu" aria-labelledby="invDropdown">
-            <li><a class="dropdown-item" href="investigacion.html#lineas">Líneas de investigación</a></li>
+            <li><a class="dropdown-item" href="#lineas">Líneas de investigación</a></li>
             <li><a class="dropdown-item" href="grupos.html">Grupos y Laboratorios</a></li>
           </ul>
         </li>
@@ -43,10 +59,120 @@
             🌙 Oscuro
           </button>
         </li>
+
       </ul>
     </div>
   </div>
 </nav>
 
+
+<!-- HEADER -->
+<header class="header d-flex align-items-center">
+  <div class="container text-center text-white">
+    <h1 class="fw-bold display-5">Investigación</h1>
+    <p class="lead mt-3">Líneas estratégicas y objetivos científicos del IIISI</p>
+  </div>
+</header>
+
+
+<!-- CONTENIDO PRINCIPAL -->
+<div class="container my-5">
+
+  <!-- LÍNEAS DE INVESTIGACIÓN -->
+  <section id="lineas" class="mb-5">
+    <h2 class="section-title">Líneas de investigación</h2>
+
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card shadow-sm border-0 h-100">
+          <div class="card-body">
+            <h5 class="card-title text-primary">Inteligencia Artificial</h5>
+            <p class="card-text">
+              Aprendizaje automático, IA explicable, razonamiento automatizado, agentes inteligentes,
+              minería de datos y sistemas cognitivos.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card shadow-sm border-0 h-100">
+          <div class="card-body">
+            <h5 class="card-title text-primary">Ingeniería de Software</h5>
+            <p class="card-text">
+              Arquitecturas, calidad de software, pruebas automatizadas, DevOps, metodologías ágiles,
+              desarrollo de software crítico y procesos de ingeniería.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card shadow-sm border-0 h-100">
+          <div class="card-body">
+            <h5 class="card-title text-primary">Ciencia de Datos</h5>
+            <p class="card-text">
+              Modelado estadístico, Big Data, visualización, analítica avanzada, minería de datos
+              y sistemas de soporte a la toma de decisiones.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card shadow-sm border-0 h-100">
+          <div class="card-body">
+            <h5 class="card-title text-primary">Sistemas de Información</h5>
+            <p class="card-text">
+              Transformación digital, gobierno electrónico, interoperabilidad, gestión documental
+              y plataformas de servicios públicos digitales.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card shadow-sm border-0 h-100">
+          <div class="card-body">
+            <h5 class="card-title text-primary">Redes y Telecomunicaciones</h5>
+            <p class="card-text">
+              Seguridad informática, redes distribuidas, IoT, infraestructura de servicios,
+              conectividad y tecnologías emergentes en comunicaciones.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- OBJETIVOS CIENTÍFICOS -->
+  <section class="mb-5">
+    <h2 class="section-title">Objetivos científicos</h2>
+
+    <ul class="section-text">
+      <li>Impulsar la producción de conocimiento original en informática y tecnologías emergentes.</li>
+      <li>Conformar equipos interdisciplinarios con impacto regional y nacional.</li>
+      <li>Vincular líneas de investigación con necesidades científicas, sociales y productivas.</li>
+      <li>Promover la participación en redes nacionales e internacionales de I+D+I.</li>
+      <li>Fortalecer la formación de recursos humanos en investigación científica.</li>
+    </ul>
+  </section>
+
+</div>
+
+
+<!-- FOOTER -->
+<footer class="footer text-center text-white py-4">
+  © IIISI – Universidad Nacional de Santiago del Estero
+</footer>
+
+
+<!-- JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="script.js"></script>
+
+</body>
+</html>
