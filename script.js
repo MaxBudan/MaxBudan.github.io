@@ -63,7 +63,7 @@ async function loadNewsFromSheet() {
   // ⚠️ IMPORTANTE:
   // Cuando tengas el Google Sheet creado, reemplazá estos dos valores:
   const SHEET_ID = "1uSTOibwiKSuA60LJDqCacZPI8gQjsV_ji5MA2IyCyb0";
-  const SHEET_NAME = "Noticias"; // nombre de la pestaña
+  const SHEET_NAME = "Noticias IIISI"; // nombre de la pestaña
 
   const url =
     `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:json&sheet=${encodeURIComponent(SHEET_NAME)}`;
