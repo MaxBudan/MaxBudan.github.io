@@ -17,6 +17,8 @@ body {
   justify-content: center;
   align-items: center;
   text-shadow: 0 2px 6px rgba(0,0,0,0.35);
+  position: relative;
+  z-index: 1;
 }
 
 /* TITULOS */
@@ -41,6 +43,8 @@ body {
 
 .navbar {
   border-bottom: 1px solid #e0e0e0;
+  position: relative;
+  z-index: 9999; /* Asegura que siempre quede arriba */
 }
 
 .nav-link {
@@ -49,16 +53,21 @@ body {
   transition: 0.2s;
 }
 
-/* 🔥 CORRECCIÓN CRÍTICA (NO usar .active para el color) */
+/* 🔥 Corrección crítica */
 .nav-link:hover,
 .nav-link:focus {
   color: #00264d !important;
 }
 
-/* Estilo elegante para la página activa, sin interferir */
+/* No interferir con dropdown */
 .nav-link.active {
   font-weight: 700;
   opacity: 0.85;
+}
+
+/* Dropdown ALWAYS visible sobre el header */
+.dropdown-menu {
+  z-index: 9999 !important;
 }
 
 /* BOTÓN MODO OSCURO */
@@ -160,5 +169,3 @@ body.dark-mode .text-primary {
 body.dark-mode .footer {
   background-color: #050917;
 }
-
-
