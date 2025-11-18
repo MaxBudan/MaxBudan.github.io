@@ -1,5 +1,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
 }
 
 /* HEADER */
@@ -29,20 +31,31 @@ body {
 }
 
 /* NAVBAR */
+.navbar {
+  border-bottom: 1px solid #e0e0e0;
+}
+
 .nav-link {
   color: #004080 !important;
   margin-left: 18px;
   transition: 0.2s;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link.active {
   color: #00264d !important;
+}
+
+/* BOTÓN MODO OSCURO */
+#themeToggleBtn {
+  margin-left: 1rem;
 }
 
 /* GRUPOS */
 .group-box {
   border-left: 6px solid #003366;
   border-radius: 5px;
+  background-color: #ffffff;
 }
 
 /* FOOTER */
@@ -53,5 +66,64 @@ body {
 /* CARDS */
 .card-title {
   font-weight: 600;
+}
+
+/* AVATAR INTEGRANTES */
+.avatar {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+}
+
+/* ---------- MODO OSCURO ---------- */
+
+body.dark-mode {
+  background-color: #101622;
+  color: #e4e7ef;
+}
+
+body.dark-mode .navbar {
+  background-color: #121826 !important;
+  border-bottom-color: #222a3a;
+}
+
+body.dark-mode .navbar .nav-link {
+  color: #d0d4e0 !important;
+}
+
+body.dark-mode .navbar .nav-link:hover,
+body.dark-mode .navbar .nav-link.active {
+  color: #ffffff !important;
+}
+
+body.dark-mode .header {
+  background: linear-gradient(#050917e6, #050917e6),
+              url("assets/header-bg.jpg") center/cover no-repeat;
+}
+
+body.dark-mode .section-title {
+  color: #d1e2ff;
+  border-bottom-color: #4e7ad9;
+}
+
+body.dark-mode .section-text,
+body.dark-mode p,
+body.dark-mode li {
+  color: #d0d4e0;
+}
+
+body.dark-mode .card,
+body.dark-mode .group-box {
+  background-color: #181f30;
+  border-color: #222a3a;
+}
+
+body.dark-mode .card-title,
+body.dark-mode .text-primary {
+  color: #87b1ff !important;
+}
+
+body.dark-mode .footer {
+  background-color: #050917;
 }
 
