@@ -166,7 +166,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 <!-- ============================
-     ASISTENTE IIISI – CHATBOT
+     ASISTENTE IIISI – CHATBOT (POPUP)
 =============================== -->
 
 <style>
@@ -193,43 +193,21 @@ document.addEventListener("DOMContentLoaded", function () {
     width: 38px;
     height: 38px;
   }
-
-  #iiisi-chat-frame {
-    position: fixed;
-    bottom: 105px;
-    right: 25px;
-    width: 380px;
-    height: 520px;
-    border: none;
-    display: none;
-    z-index: 99999;
-    border-radius: 12px;
-    background: white;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.35);
-    animation: fadeInUp 0.25s ease-out;
-  }
-
-  @keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
 </style>
 
+<!-- BOTÓN -->
 <div id="iiisi-chat-btn">
   <img src="assets/logo.png" alt="IIISI">
 </div>
 
-<iframe
-  id="iiisi-chat-frame"
-  src="https://chatgpt.com/g/g-6926037a7fe08191a0e9b6c6d319f3a9-asistente-iiisi">
-</iframe>
-
 <script>
-  document.getElementById("iiisi-chat-btn").onclick = function() {
-    const frame = document.getElementById("iiisi-chat-frame");
-    frame.style.display = frame.style.display === "none" ? "block" : "none";
-  };
-</script>
+document.getElementById("iiisi-chat-btn").onclick = function () {
+  const url = "https://chatgpt.com/g/g-6926037a7fe08191a0e9b6c6d319f3a9-asistente-iiisi";
 
-</body>
-</html>
+  window.open(
+    url,
+    "Asistente_IIISI",
+    "width=480,height=650,left=100,top=100,resizable=yes"
+  );
+};
+</script>
